@@ -13,7 +13,7 @@
     "express-session": "^1.17.1",
     "mongoose": "^5.9.14",
     "nodemon": "^2.0.4",
-    "querystringify": ">=2.0.0",
+    "querystringify": "2.0.0",
     "redis": "^3.0.2",
     "redis-server": "^1.2.2",
     "sessionstorage": "^0.1.0"
