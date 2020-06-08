@@ -38,9 +38,6 @@ class TaskForm extends Component {
 
         // adds new task to task list
         axios.post('http://localhost:8000/tasks/create/' + this.props.taskListId, task)
-            .then(res => {
-                window.alert('Successfully added task!');
-            })
             .catch((err) => {
                 console.log(err);
             });

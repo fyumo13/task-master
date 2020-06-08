@@ -65,6 +65,20 @@ class TaskList extends Component {
             });
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        if (prevState.tasks !== this.state.tasks) {
+            axios.get('http://localhost:8000/task-lists/' + this.props.match.params.id)
+                .then(res => {
+                    this.setState({
+                        tasks: res.data
+                    });
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
+        }
+    }
+
     // displays all tasks belonging to current list
     displayTasks() {
         return this.state.tasks.map(task => {

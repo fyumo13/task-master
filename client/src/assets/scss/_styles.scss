@@ -19,8 +19,12 @@ a:hover {
     text-decoration: none;
 }
 
+#main {
+    padding: 0 8px;
+}
+
 #content {
-    margin: 24px 24px 64px 24px;
+    margin: 12px 12px 64px 12px;
 }
 
 #landing-page {
@@ -123,7 +127,7 @@ a:hover {
         margin: 0 auto;
     }
     .nav-item {
-        margin: 0 50px;
+        margin: 0 25px;
     }
 }
 
@@ -149,6 +153,14 @@ a:hover {
     margin: 16px 0 48px 0;
     .logo {
         width: 35%;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar-custom {
+        .nav-item {
+            margin: 0 50px;
+        }
     }
 }
 
@@ -205,12 +217,24 @@ a:hover {
             width: 15%;
         }
     }
+
+    .navbar-custom {
+        .nav-item {
+            margin: 0 75px;
+        }
+    }
 }
 
 @media (min-width: 992px) {
     #landing-page {
         .hero {
             width: 75%;
+        }
+    }
+
+    .navbar-custom {
+        .nav-item {
+            margin: 0 100px;
         }
     }
 }
